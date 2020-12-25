@@ -19,3 +19,7 @@ button{
     border-color: green;
     margin-left: 50px;
 }
+
+.error{
+        color: red;
+}
