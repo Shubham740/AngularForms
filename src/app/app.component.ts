@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormGroupName, FormControl, FormGroup,Validators} from '@angular/forms'
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyForms';
-
-  onSubmit(data: object){
-    let email = data.value.email;
-    let password = data.value.password
-    console.log('email and password =>>>', email, password)
-  }
+  loginForm=new FormGroup({
+    email:new FormControl('', Validators.required),
+    password:new FormControl('', Validators.required)
+  })
+    getEmail(){
+      return this.loginForm.get('email')
+    }
 }
