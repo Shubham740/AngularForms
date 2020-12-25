@@ -1,0 +1,12 @@
+<h1>Sample Form</h1>
+
+
+<form #userForm='ngForm' (ngSubmit)="onSubmit(userForm)" >
+  <input  type="text" name="email" placeholder="Enter Email" ngModel/>
+  <br/>
+  <br/>
+  <input type="password" name="password" placeholder="Enter Password" ngModel/>
+  <br/>
+  <br/>
+  <button type="submit">Login</button>
+</form>
