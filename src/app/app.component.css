@@ -23,3 +23,9 @@ button{
 .error{
         color: red;
 }
+p{
+    font-size: 20px;
+    color: pink;
+    font-weight: 900;
+
+}

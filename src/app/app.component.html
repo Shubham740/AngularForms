@@ -1,5 +1,12 @@
 <h1>Sample Form</h1>
 
+<p> Title in UpperCase {{title|uppercase}}</p>
+<p>Title in LowerCase {{title|lowercase}}</p>
+<p> Money in currency pipeline =>>>> {{money | currency:"INR"}}</p>
+
+<p> Date =>>>>> {{date | date:'dd MMMM YYYY'}}</p>
+<p>{{date | date:'shortTime'}}</p>
+<p>Json pipeline =>>>{{nameObject|json}}</p>
 
 <form #userForm='ngForm' (ngSubmit)="onSubmit(userForm.value)">
   <div>
